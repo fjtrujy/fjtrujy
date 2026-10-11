@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title description">
+  <title id="title">Francisco Javier Trujillo — from pixels to platforms</title>
+  <desc id="description">A dark technical banner with vibrant turquoise and amber accents, a subtle circuit grid, and a diagram of an application-to-GPU rendering pipeline.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071421"/>
+      <stop offset="0.57" stop-color="#10283a"/>
+      <stop offset="1" stop-color="#0d1b31"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#55e5bb"/>
+      <stop offset="1" stop-color="#66cce9"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#183349"/>
+      <stop offset="1" stop-color="#0c2234"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#6dc3ca" stroke-width="0.7" stroke-opacity="0.085"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect width="1200" height="340" rx="22"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#background)"/>
+    <rect width="1200" height="340" fill="url(#grid)"/>
+    <circle cx="1103" cy="-88" r="280" fill="#42d6ba" opacity="0.045"/>
+    <circle cx="127" cy="401" r="229" fill="#f0a56a" opacity="0.055"/>
+    <path d="M0 308H535L600 244H691M42 40H580L620 80H677" stroke="#3a7c8e" stroke-width="1.5" fill="none" stroke-opacity="0.28"/>
+    <path d="M0 314H550L615 250H690" stroke="#55e5bb" stroke-width="1.5" fill="none" stroke-opacity="0.19"/>
+    <circle cx="600" cy="244" r="4" fill="#55e5bb" opacity="0.65"/>
+    <circle cx="620" cy="80" r="4" fill="#f8b878" opacity="0.85"/>
+
+    <rect x="68" y="43" width="176" height="27" rx="13.5" fill="#153c46" stroke="#327a7f"/>
+    <circle cx="87" cy="56.5" r="4.5" fill="#55e5bb"/>
+    <text x="102" y="61.5" fill="#b1f2e5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.1">ENGINEERING / OSS</text>
+
+    <text x="67" y="135" fill="#f4f8fb" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.8">Francisco Javier</text>
+    <text x="67" y="203" fill="url(#signal)" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800" letter-spacing="-1.8">Trujillo.</text>
+    <path d="M70 224H580" stroke="#467b87" stroke-width="1.5"/>
+    <path d="M70 224H221" stroke="#f8b878" stroke-width="3.5"/>
+    <text x="69" y="264" fill="#e1edf4" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="500">From pixels to platforms.</text>
+    <text x="70" y="295" fill="#91abb9" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2">RENDERING  /  PERFORMANCE  /  OPEN SOURCE</text>
+
+    <rect x="720" y="54" width="429" height="232" rx="19" fill="#020c16" opacity="0.55"/>
+    <rect x="716" y="50" width="429" height="232" rx="19" fill="url(#panel)" stroke="#476b79" stroke-width="1.5"/>
+    <path d="M716 101H1145" stroke="#3c6071" stroke-width="1"/>
+    <circle cx="745" cy="76" r="5" fill="#f8b878"/>
+    <circle cx="762" cy="76" r="5" fill="#55e5bb"/>
+    <circle cx="779" cy="76" r="5" fill="#4c738a"/>
+    <text x="809" y="81" fill="#cadbe2" font-family="Menlo, Consolas, monospace" font-size="13" letter-spacing="0.9">FRAME PIPELINE</text>
+    <text x="1107" y="81" fill="#55e5bb" font-family="Menlo, Consolas, monospace" font-size="12" text-anchor="end">60Hz</text>
+
+    <rect x="739" y="128" width="113" height="75" rx="10" fill="#193c4e" stroke="#4e8c93"/>
+    <rect x="874" y="128" width="107" height="75" rx="10" fill="#153e4c" stroke="#47bfae"/>
+    <rect x="1003" y="128" width="119" height="75" rx="10" fill="#273744" stroke="#c58f66"/>
+    <path d="M853 165H872M868 161L873 165L868 169M982 165H1001M997 161L1002 165L997 169" fill="none" stroke="#77d5c7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="795" y="161" text-anchor="middle" fill="#f1f8fb" font-family="Menlo, Consolas, monospace" font-size="15" font-weight="700">APP</text>
+    <text x="795" y="184" text-anchor="middle" fill="#a4c7d2" font-family="Menlo, Consolas, monospace" font-size="11">Swift / C++</text>
+    <text x="927" y="161" text-anchor="middle" fill="#f1f8fb" font-family="Menlo, Consolas, monospace" font-size="15" font-weight="700">CORE</text>
+    <text x="927" y="184" text-anchor="middle" fill="#a4d8d3" font-family="Menlo, Consolas, monospace" font-size="11">WASM</text>
+    <text x="1062" y="161" text-anchor="middle" fill="#f1f8fb" font-family="Menlo, Consolas, monospace" font-size="15" font-weight="700">GPU</text>
+    <text x="1062" y="184" text-anchor="middle" fill="#edbe96" font-family="Menlo, Consolas, monospace" font-size="11">Metal / GL</text>
+
+    <text x="741" y="238" fill="#829fae" font-family="Menlo, Consolas, monospace" font-size="11" letter-spacing="0.8">FRAME TIME</text>
+    <path d="M831 235H970" stroke="#3c6071" stroke-width="1"/>
+    <path d="M980 236V229H989V240H999V220H1009V236H1019V226H1029V236H1039V216H1049V236H1059V228H1069V236H1079V223H1089V236H1115" fill="none" stroke="#55e5bb" stroke-width="2" stroke-linejoin="round"/>
+    <text x="739" y="263" fill="#7f9cad" font-family="Menlo, Consolas, monospace" font-size="11">Build it. Measure it. Make it better.</text>
+    <path d="M1130 18V33M1130 18H1145M36 306V322M36 322H52" stroke="#f8b878" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>
