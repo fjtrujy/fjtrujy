@@ -4,3 +4,6 @@ __pycache__/
 
 # Temporary render previews
 .preview/
+
+# Local Vercel account/project metadata (never commit credentials)
+.vercel/

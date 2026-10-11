@@ -8,7 +8,10 @@ on:
     branches: [main]
     paths:
       - "scripts/update_profile_stats.py"
+      - "scripts/live_*.py"
+      - "api/*.py"
       - "tests/test_profile_stats.py"
+      - "tests/test_live_profile_stats.py"
       - ".github/workflows/profile-stats.yml"
 
 permissions:
