@@ -1,0 +1,46 @@
+name: Refresh profile statistics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 7 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update_profile_stats.py"
+      - "tests/test_profile_stats.py"
+      - ".github/workflows/profile-stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Generate GitHub profile graphics
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run generator tests
+        run: python -m unittest discover -s tests -v
+      - name: Generate graphics from public GitHub data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/update_profile_stats.py
+      - name: Commit refreshed graphics
+        run: |
+          git diff --check
+          git add -- assets/impact-stats.svg assets/activity-stats.svg
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Refresh GitHub profile statistics"
+            git push origin HEAD:main
+          fi

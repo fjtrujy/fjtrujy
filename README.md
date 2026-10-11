@@ -56,6 +56,22 @@ An interactive learning game where children draw directions, letters, or numbers
 
 **[Try it](https://fjtrujy.github.io/kidmaze/)** · **[See the source](https://github.com/fjtrujy/kidmaze)**
 
+## GitHub activity
+
+<p align="center">
+  <img src="./assets/activity-stats.svg" alt="GitHub contribution calendar for the last 365 days, current contribution streak, and primary languages across my public original repositories." width="100%">
+</p>
+
+<sub>The heatmap shows contributions recorded by GitHub over the last 365 days. Language percentages represent each repository's primary detected language across my public, original, non-archived repositories—not the languages I use most at work.</sub>
+
+## Open-source impact
+
+<p align="center">
+  <img src="./assets/impact-stats.svg" alt="Public authored pull requests, merged pull requests, external repositories with merged contributions, and GitHub-counted commit contributions." width="100%">
+</p>
+
+<sub>Upstream repositories are distinct repositories outside my account where I have a merged public pull request. Commit contributions follow GitHub's contribution rules; they are not a raw count of all Git commits (forks, non-default branches, and private work may not appear). These graphics are [generated from GitHub's API every day](.github/workflows/profile-stats.yml), so the displayed counts reflect the last successful refresh.</sub>
+
 ## Open source, with receipts
 
 I contribute upstream as well as maintaining my own projects. Here are a few **merged pull requests** that show the kinds of problems I work on:
